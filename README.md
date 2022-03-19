@@ -21,6 +21,7 @@ make && sudo make clean install
 - win+F5 turn down the volume
 - win+F1 turn down light
 - win+F2 turn up light
+- win+F11 prtscreen(you should run `sudo pacman -S gnome-screen` before.)
 ## fonts
 - noto-fonts-cjk
 - wqy-microhei

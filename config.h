@@ -6,7 +6,9 @@ static const unsigned int gappx = 6;/* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Source Code Pro:size=24", "Symbols Nerd Font:size=24:type:2048-em", "WenQuanYi Micro Hei:size=24:type=Rugular" };
+static const char *fonts[]          = { "Source Code Pro:size=24", 
+					"Symbols Nerd Font:size=24:type:2048-em", 
+					"WenQuanYi Micro Hei:size=24:type=Rugular" };
 static const char dmenufont[]       = "Source Code Pro:size=24";
 static const char col_gray1[]       = "#222222";//black
 static const char col_gray2[]       = "#444444";//black
@@ -75,17 +77,19 @@ static const char *volumedown[]  = { "pamixer", "-d", "5", NULL };
 static const char *volumemute[]  = { "/home/ljk/scripts/volume-mute.sh", NULL };
 static const char *lightup[]  = { "/home/ljk/scripts/light-up.sh", NULL };
 static const char *lightdown[]  = { "/home/ljk/scripts/light-down.sh", NULL };
+static const char *screen_capture[]  = { "gnome-screenshot", NULL };
 //static const char *[]  = { "/home/ljk/scripts/.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,                       XK_F5,      spawn,          {.v = volumedown } },
-	{ MODKEY,                       XK_F6,      spawn,          {.v = volumeup } },
-	{ MODKEY,                       XK_F4,      spawn,          {.v = volumemute } },
-	{ MODKEY,                       XK_F1,      spawn,          {.v = lightdown } },
-	{ MODKEY,                       XK_F2,      spawn,          {.v = lightup } },
+	{ MODKEY,                       XK_F5,     spawn,          {.v = volumedown } },
+	{ MODKEY,                       XK_F6,     spawn,          {.v = volumeup } },
+	{ MODKEY,                       XK_F4,     spawn,          {.v = volumemute } },
+	{ MODKEY,                       XK_F1,     spawn,          {.v = lightdown } },
+	{ MODKEY,                       XK_F2,     spawn,          {.v = lightup } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_F11,      spawn,          {.v = screen_capture } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
