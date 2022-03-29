@@ -2,15 +2,15 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx = 6;/* gaps between windows */
+static const unsigned int gappx = 8;/* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const int vertpad            = 10;        /* vertical padding of bar */
-static const int sidepad            = 10;        /* horizontal padding of bar */
-static const char *fonts[]          = { "Source Code Pro:size=24", 
+static const int vertpad            = 5;        /* vertical padding of bar */
+static const int sidepad            = 8;        /* horizontal padding of bar */
+static const char *fonts[]          = { "JetBrainsMono-Regular:size=24", 
 					"Symbols Nerd Font:size=24:type:2048-em", 
-					"WenQuanYi Micro Hei:size=24:type=Rugular" };
+					"WenQuanYi Micro Hei:size=24:type=Regular" };
 static const char dmenufont[]       = "Source Code Pro:size=24";
 static const char col_gray1[]       = "#222222";//black
 static const char col_gray2[]       = "#444444";//black

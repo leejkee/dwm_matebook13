@@ -16,6 +16,7 @@ make && sudo make clean install
 - `autostart.sh`: runs /home/ljk/scripts/autostart.sh when `startx`
 - modify the funtion runAutoastart() in dwm.c to customize your path of `autostart.sh`
 ## shortcut
+You can visit the [pages](https://github.com/leejkee/scripts1) for scripts.
 - win+F4 mute/unmute
 - win+F6 turn up the volume
 - win+F5 turn down the volume
@@ -23,7 +24,11 @@ make && sudo make clean install
 - win+F2 turn up light
 - win+F11 prtscreen(you should run `sudo pacman -S gnome-screen` before.)
 ## fonts
+```shell
+sudo pacman -S <these packages of fonts>
+```
 - noto-fonts-cjk
-- wqy-microhei
-- adobe-source-code-pro-fonts
+- wqy-microhei(for the Chinese fonts)
+- adobe-source-code-pro-fonts(for the st, a simple terminal)
 - ttf-nerd-fonts-symbols
+- ttf-jetbrains-mono(for my demenu and my dwm_bar)
